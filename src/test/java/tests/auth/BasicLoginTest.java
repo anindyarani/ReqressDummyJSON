@@ -63,6 +63,6 @@ public class BasicLoginTest {
         Assert.assertEquals(response.getStatusCode(), 400);
 
         String actualMessage = response.jsonPath().getString("error");
-        Assert.assertEquals(actualMessage, "Missing password", "Pesan error tidak sesuai!");
+        Assert.assertEquals(actualMessage, "Missing password");
     }
 }
